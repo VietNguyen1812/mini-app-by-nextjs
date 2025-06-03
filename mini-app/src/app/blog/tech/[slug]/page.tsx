@@ -25,7 +25,7 @@ export default async function BLogPost({
     params,
 
 } : {
-    params : {slug : string}
+    params : {slug : string} 
 }) {
     const post : Post = await fetch(
         `https://jsonplaceholder.typicode.com/posts/${params.slug}`

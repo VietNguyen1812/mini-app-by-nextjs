@@ -30,8 +30,8 @@ export default function RootLayout({
       >
         <div className="max-w-4xl mx-auto p-4">
           <header className="mb-6">
-            <h1 className="text-4xl font-bold text-blue-600">Mini App</h1>
-            <nav className="mt-4">
+            {/* <h1 className="text-4xl font-bold text-blue-600">Mini App</h1> */}
+            {/* <nav className="mt-4">
               <a href="/" className="text-blue-600 hover:underline mr-4">
                 Trang chủ
               </a>
@@ -41,7 +41,7 @@ export default function RootLayout({
               <a href="/blog/tech" className="text-blue-600 hover:underline">
                 Công nghệ
               </a>
-            </nav>
+            </nav> */}
           </header>
           {children}
         </div>

@@ -1,8 +1,15 @@
-import Image from "next/image";
+// import Image from "next/image";
+// import { Button } from "@/components/ui/button";
+// import { Input } from "@/components/ui/input";
+import Card from "./Card";
 
 export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+      <Card />
+      {/* <Button className="p-10 text-mini" variant="ghost">Click me </Button> */}
+
+      {/* <Input type="text" name = "name" placeholder="Enter your name"/>
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
         <Image
           className="dark:invert"
@@ -97,7 +104,7 @@ export default function Home() {
           />
           Go to nextjs.org →
         </a>
-      </footer>
+      </footer> */}
     </div>
   );
 }
