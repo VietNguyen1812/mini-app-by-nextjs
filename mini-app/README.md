@@ -38,3 +38,21 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 // Rendering convert code thành user interface 
 // render ở server and client. (hybrid)
+
+
+// Single application lifrcycle 
+ Khi làn đầu trả 1 web 
+ - Browser request tới server -> trả về file index.html (ko chứa gì)
+ - Browser thấy trong file html có link đến file js, css nên là request lần nữa đến server để lấy file css js 
+ - Browser chạy JS và render ra HTML 
+ - User thấy và used website
+
+ Ban đàu web sẽ không có gì tới khi xong bước 3 
+
+ // Nextjs có server component và client component
+ // Dùng client component : 
+ // Dùng state : Hook, useState, ensubmit, onChange
+ / khi nextjs build thì sẽ html ra sẵn hết -lúc chạy nextjs là nó sẽ ra website luon
+ // UI ban dầu ngay lập tức do Server.js trả về HTML Sau đó browser render lại Client COmponent 1 lần nữa để sync DOM , event, state, effect
+ ==> CLient COmponent render tối thiểu 2 lần: 1 lần build 1 lần ở client
+ 
